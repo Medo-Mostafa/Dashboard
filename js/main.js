@@ -22,7 +22,6 @@ function animateContent(parent, ...children) {
       });
     }
   });
-
 }
 
 // -------------------------------------------- Yearly Targets Widget --------------------------------------------
@@ -39,7 +38,7 @@ if (window.innerWidth >= 1400) {
   });
 } else {
   window.addEventListener("scroll", () => {
-    if (window.scrollY >= yearlyTargetsWidget.offsetTop - 200) {
+    if (window.scrollY >= yearlyTargetsWidget.offsetTop - 400) {
       progressesSpans.forEach((span) => {
         span.style.width = `${span.dataset.width}`;
       });
