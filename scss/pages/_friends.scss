@@ -1,0 +1,68 @@
+.friends-page {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  @include breakpoints(400px) {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  .friend-box {
+    padding: 20px;
+    .contact {
+      left: 9px;
+      top: 9px;
+      i {
+        background-color: #eee;
+        padding: 10px;
+        border-radius: 50%;
+        color: #666;
+        font-size: 13px;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+          background-color: $blue-color;
+          color: #fff;
+        }
+      }
+    }
+    .profile {
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 20px 0;
+      }
+      p {
+        font-size: 13px;
+        font-weight: 500;
+      }
+    }
+    .about {
+      color: #000;
+      font-size: 14px;
+      font-weight: 500;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      padding: 14px 0;
+      &.vip::after {
+        content: "vip";
+        text-transform: uppercase;
+        color: $orange-color;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 40px;
+        opacity: 0.2;
+      }
+    }
+    .info {
+      span {
+        font-size: 13px;
+      }
+      a {
+        width: fit-content;
+        margin-left: 5px;
+      }
+    }
+  }
+}

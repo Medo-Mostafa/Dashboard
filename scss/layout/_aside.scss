@@ -1,0 +1,65 @@
+aside {
+  width: 245px;
+  box-shadow: 0 0 10px #ddd;
+  padding: 1rem;
+  @include breakpoints(mobile) {
+    width: 56px;
+    padding: 0.9rem 0;
+  }
+  h3 {
+    font-size: 22px;
+    margin-bottom: 50px;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #000;
+    }
+    &::before {
+      width: 80px;
+      height: 2px;
+      bottom: -20px;
+    }
+    &::after {
+      bottom: -29px;
+      width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+    }
+    @include breakpoints(mobile) {
+      font-size: 15px;
+      margin-bottom: 20px;
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
+  ul {
+    @include breakpoints(mobile) {
+      margin: 0 12px;
+    }
+    li {
+      a {
+        font-size: 14px;
+        padding: 9px;
+        font-weight: 500;
+        margin-bottom: 5px;
+        border-radius: 6px;
+        transition: 0.3s ease-in-out;
+        &:hover,
+        &.active {
+          background-color: #f6f6f6;
+        }
+        span {
+          @include breakpoints(mobile) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

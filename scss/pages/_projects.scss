@@ -1,0 +1,58 @@
+.projects-page {
+  @include grid(500px);
+  gap: 20px;
+  @include breakpoints(mobile) {
+    @include grid(330px);
+  }
+  @include breakpoints(425px) {
+    @include grid(200px);
+  }
+  .project-box {
+    &::before {
+      content: attr(arial-date);
+      color: #888;
+      font-size: 13px;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+    p {
+      font-size: 14px;
+    }
+    a {
+      img {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        @include border-radius(50%);
+        border: 2px solid white;
+        &:hover {
+          z-index: 1;
+        }
+      }
+      &:not(:first-of-type) {
+        margin-left: -15px;
+      }
+    }
+
+    .required-skills {
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      li {
+        width: fit-content;
+      }
+      @include breakpoints(mobile) {
+        flex-direction: column !important;
+      }
+    }
+    .prog {
+      height: 8px;
+      span {
+        height: 100%;
+      }
+    }
+    .price {
+      font-size: 14px;
+    }
+  }
+}

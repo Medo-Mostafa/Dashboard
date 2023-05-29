@@ -1,0 +1,439 @@
+<!DOCTYPE html5>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Files</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="crossorigin"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/files.css" />
+  </head>
+  <body>
+    <main class="page d-flex">
+      <!-- Start Aside -->
+      <aside class="position-relative bg-white">
+        <h3 class="fw-bold text-black position-relative text-center">Medo</h3>
+        <ul>
+          <li>
+            <a class="d-flex align-items-center" href="index.html"
+              ><i class="fa-regular fa-chart-bar fa-fw me-lg-2"></i
+              ><span>Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a class="d-flex align-items-center" href="settings.html">
+              <i class="fa-solid fa-gear fa-fw me-lg-2"></i
+              ><span>Settings</span></a
+            >
+          </li>
+          <li>
+            <a class="d-flex align-items-center" href="profile.html"
+              ><i class="fa-regular fa-user fa-fw me-lg-2"></i
+              ><span>Profile</span></a
+            >
+          </li>
+          <li>
+            <a class="d-flex align-items-center" href="projects.html"
+              ><i class="fa-solid fa-diagram-project fa-fw me-lg-2"></i
+              ><span>Projects</span></a
+            >
+          </li>
+          <li>
+            <a class="d-flex align-items-center" href="courses.html"
+              ><i class="fa-solid fa-graduation-cap fa-fw me-lg-2"></i
+              ><span>Courses</span></a
+            >
+          </li>
+          <li>
+            <a class="d-flex align-items-center" href="friends.html"
+              ><i class="fa-regular fa-circle-user fa-fw me-lg-2"></i
+              ><span>Friends</span></a
+            >
+          </li>
+          <li>
+            <a class="d-flex align-items-center active" href="files.html"
+              ><i class="fa-regular fa-file fa-fw me-lg-2"></i
+              ><span>Files</span></a
+            >
+          </li>
+          <li>
+            <a class="d-flex align-items-center" href="plans.html"
+              ><i class="fa-regular fa-credit-card fa-fw me-lg-2"></i
+              ><span>Plans</span></a
+            >
+          </li>
+        </ul>
+      </aside>
+      <!-- End Aside -->
+      <div class="content w-100">
+        <!-- Start Header -->
+        <header class="bg-white p-1 p-md-3 d-flex justify-content-between">
+          <div class="search position-relative">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Type A Keyword"
+            />
+          </div>
+          <div
+            class="header-icons d-flex justify-content-between align-items-center"
+          >
+            <span
+              class="notification position-relative fa-regular fa-bell fa-lg"
+              ><sup></sup
+            ></span>
+            <img class="avatar" src="images/avatar.png" alt="Avatar Image" />
+          </div>
+        </header>
+        <!-- End Header -->
+        <section class="main-section">
+          <h1 class="text-black position-relative mb-5">Files</h1>
+          <div class="files-page">
+            <div class="files-state bg-white rounded-3">
+              <h4 class="text-black fw-bold mb-3">Files Statistics</h4>
+              <div class="file d-flex align-items-center rounded-3 mb-3">
+                <i
+                  class="fa-regular fa-file-pdf fa-lg blue d-flex align-items-center justify-content-center c-blue icon"
+                ></i>
+                <div class="info">
+                  <span>PDF Files</span>
+                  <span class="d-block mt-2 text-black-50">130</span>
+                </div>
+                <div class="size text-black-50 ms-auto">6.5GB</div>
+              </div>
+              <div class="file d-flex align-items-center rounded-3 mb-3">
+                <i
+                  class="fa-regular fa-images fa-lg green d-flex align-items-center justify-content-center c-green icon"
+                ></i>
+                <div class="info">
+                  <span>Images</span>
+                  <span class="d-block mt-2 text-black-50">115</span>
+                </div>
+                <div class="size text-black-50 ms-auto">3.5GB</div>
+              </div>
+              <div class="file d-flex align-items-center rounded-3 mb-3">
+                <i
+                  class="fa-regular fa-file-word fa-lg red d-flex align-items-center justify-content-center c-red icon"
+                ></i>
+                <div class="info">
+                  <span>Word Files</span>
+                  <span class="d-block mt-2 text-black-50">110</span>
+                </div>
+                <div class="size text-black-50 ms-auto">3.2GB</div>
+              </div>
+              <div class="file d-flex align-items-center rounded-3 mb-3">
+                <i
+                  class="fa-solid fa-file-csv fa-lg orange d-flex align-items-center justify-content-center c-orange icon"
+                ></i>
+                <div class="info">
+                  <span>CSV Files</span>
+                  <span class="d-block mt-2 text-black-50">99</span>
+                </div>
+                <div class="size text-black-50 ms-auto">2.9GB</div>
+              </div>
+              <a class="upload bg-blue text-white" href="#">
+                <i class="fa-solid fa-angles-up"></i>
+                Upload
+              </a>
+            </div>
+            <div class="file-content d-grid gap-3">
+              <div class="box rounded-3 bg-white position-relative">
+                <div class="icon text-center">
+                  <img src="images/pdf.svg" alt="Icon" />
+                </div>
+                <div class="text-center fw-medium text-black">my-file.pdf</div>
+                <p class="text-black-50">Medo</p>
+                <div class="info d-flex justify-content-between text-black-50">
+                  <span>20/06/2020</span>
+                  <span>5.5MB</span>
+                </div>
+              </div>
+              <div class="box rounded-3 bg-white position-relative">
+                <div class="icon text-center">
+                  <img src="images/avi.svg" alt="Icon" />
+                </div>
+                <div class="text-center fw-medium text-black">my-file.avi</div>
+                <p class="text-black-50">Admin</p>
+                <div class="info d-flex justify-content-between text-black-50">
+                  <span>16/5/2021</span>
+                  <span>12.5MB</span>
+                </div>
+              </div>
+              <div class="box rounded-3 bg-white position-relative">
+                <div class="icon text-center">
+                  <img src="images/eps.svg" alt="Icon" />
+                </div>
+                <div class="text-center fw-medium text-black">my-file.eps</div>
+                <p class="text-black-50">Uploader</p>
+                <div class="info d-flex justify-content-between text-black-50">
+                  <span>16/5/2021</span>
+                  <span>2.7MB</span>
+                </div>
+              </div>
+              <div class="box rounded-3 bg-white position-relative">
+                <div class="icon text-center">
+                  <img src="images/psd.svg" alt="Icon" />
+                </div>
+                <div class="text-center fw-medium text-black">my-file.psd</div>
+                <p class="text-black-50">Osama</p>
+                <div class="info d-flex justify-content-between text-black-50">
+                  <span>16/5/2021</span>
+                  <span>15.1MB</span>
+                </div>
+              </div>
+              <div class="box rounded-3 bg-white position-relative">
+                <div class="icon text-center">
+                  <img src="images/dll.svg" alt="Icon" />
+                </div>
+                <div class="text-center fw-medium text-black">my-file.dll</div>
+                <p class="text-black-50">Coder</p>
+                <div class="info d-flex justify-content-between text-black-50">
+                  <span>16/5/2021</span>
+                  <span>2.2MB</span>
+                </div>
+              </div>
+              <div class="box rounded-3 bg-white position-relative">
+                <div class="icon text-center">
+                  <img src="images/png.svg" alt="Icon" />
+                </div>
+                <div class="text-center fw-medium text-black">my-file.png</div>
+                <p class="text-black-50">Designer</p>
+                <div class="info d-flex justify-content-between text-black-50">
+                  <span>16/5/2021</span>
+                  <span>1.1MB</span>
+                </div>
+              </div>
+              <div class="box rounded-3 bg-white position-relative">
+                <div class="icon text-center">
+                  <img src="images/dll.svg" alt="Icon" />
+                </div>
+                <div class="text-center fw-medium text-black">my-file.dll</div>
+                <p class="text-black-50">Coder</p>
+                <div class="info d-flex justify-content-between text-black-50">
+                  <span>16/5/2021</span>
+                  <span>2.2MB</span>
+                </div>
+              </div>
+              <div class="box rounded-3 bg-white position-relative">
+                <div class="icon text-center">
+                  <img src="images/png.svg" alt="Icon" />
+                </div>
+                <div class="text-center fw-medium text-black">my-file.png</div>
+                <p class="text-black-50">Designer</p>
+                <div class="info d-flex justify-content-between text-black-50">
+                  <span>16/5/2021</span>
+                  <span>1.1MB</span>
+                </div>
+              </div>
+              <div class="box rounded-3 bg-white position-relative">
+                <div class="icon text-center">
+                  <img src="images/psd.svg" alt="Icon" />
+                </div>
+                <div class="text-center fw-medium text-black">my-file.psd</div>
+                <p class="text-black-50">Osama</p>
+                <div class="info d-flex justify-content-between text-black-50">
+                  <span>16/5/2021</span>
+                  <span>15.1MB</span>
+                </div>
+              </div>
+              <div class="box rounded-3 bg-white position-relative">
+                <div class="icon text-center">
+                  <img src="images/pdf.svg" alt="Icon" />
+                </div>
+                <div class="text-center fw-medium text-black">my-file.pdf</div>
+                <p class="text-black-50">Medo</p>
+                <div class="info d-flex justify-content-between text-black-50">
+                  <span>20/06/2020</span>
+                  <span>5.5MB</span>
+                </div>
+              </div>
+              <div class="box rounded-3 bg-white position-relative">
+                <div class="icon text-center">
+                  <img src="images/avi.svg" alt="Icon" />
+                </div>
+                <div class="text-center fw-medium text-black">my-file.avi</div>
+                <p class="text-black-50">Admin</p>
+                <div class="info d-flex justify-content-between text-black-50">
+                  <span>16/5/2021</span>
+                  <span>12.5MB</span>
+                </div>
+              </div>
+              <div class="box rounded-3 bg-white position-relative">
+                <div class="icon text-center">
+                  <img src="images/eps.svg" alt="Icon" />
+                </div>
+                <div class="text-center fw-medium text-black">my-file.eps</div>
+                <p class="text-black-50">Uploader</p>
+                <div class="info d-flex justify-content-between text-black-50">
+                  <span>16/5/2021</span>
+                  <span>2.7MB</span>
+                </div>
+              </div>
+              <div class="box rounded-3 bg-white position-relative">
+                <div class="icon text-center">
+                  <img src="images/pdf.svg" alt="Icon" />
+                </div>
+                <div class="text-center fw-medium text-black">my-file.pdf</div>
+                <p class="text-black-50">Medo</p>
+                <div class="info d-flex justify-content-between text-black-50">
+                  <span>20/06/2020</span>
+                  <span>5.5MB</span>
+                </div>
+              </div>
+              <div class="box rounded-3 bg-white position-relative">
+                <div class="icon text-center">
+                  <img src="images/avi.svg" alt="Icon" />
+                </div>
+                <div class="text-center fw-medium text-black">my-file.avi</div>
+                <p class="text-black-50">Admin</p>
+                <div class="info d-flex justify-content-between text-black-50">
+                  <span>16/5/2021</span>
+                  <span>12.5MB</span>
+                </div>
+              </div>
+              <div class="box rounded-3 bg-white position-relative">
+                <div class="icon text-center">
+                  <img src="images/eps.svg" alt="Icon" />
+                </div>
+                <div class="text-center fw-medium text-black">my-file.eps</div>
+                <p class="text-black-50">Uploader</p>
+                <div class="info d-flex justify-content-between text-black-50">
+                  <span>16/5/2021</span>
+                  <span>2.7MB</span>
+                </div>
+              </div>
+              <div class="box rounded-3 bg-white position-relative">
+                <div class="icon text-center">
+                  <img src="images/psd.svg" alt="Icon" />
+                </div>
+                <div class="text-center fw-medium text-black">my-file.psd</div>
+                <p class="text-black-50">Osama</p>
+                <div class="info d-flex justify-content-between text-black-50">
+                  <span>16/5/2021</span>
+                  <span>15.1MB</span>
+                </div>
+              </div>
+              <div class="box rounded-3 bg-white position-relative">
+                <div class="icon text-center">
+                  <img src="images/dll.svg" alt="Icon" />
+                </div>
+                <div class="text-center fw-medium text-black">my-file.dll</div>
+                <p class="text-black-50">Coder</p>
+                <div class="info d-flex justify-content-between text-black-50">
+                  <span>16/5/2021</span>
+                  <span>2.2MB</span>
+                </div>
+              </div>
+              <div class="box rounded-3 bg-white position-relative">
+                <div class="icon text-center">
+                  <img src="images/png.svg" alt="Icon" />
+                </div>
+                <div class="text-center fw-medium text-black">my-file.png</div>
+                <p class="text-black-50">Designer</p>
+                <div class="info d-flex justify-content-between text-black-50">
+                  <span>16/5/2021</span>
+                  <span>1.1MB</span>
+                </div>
+              </div>
+              <div class="box rounded-3 bg-white position-relative">
+                <div class="icon text-center">
+                  <img src="images/dll.svg" alt="Icon" />
+                </div>
+                <div class="text-center fw-medium text-black">my-file.dll</div>
+                <p class="text-black-50">Coder</p>
+                <div class="info d-flex justify-content-between text-black-50">
+                  <span>16/5/2021</span>
+                  <span>2.2MB</span>
+                </div>
+              </div>
+              <div class="box rounded-3 bg-white position-relative">
+                <div class="icon text-center">
+                  <img src="images/png.svg" alt="Icon" />
+                </div>
+                <div class="text-center fw-medium text-black">my-file.png</div>
+                <p class="text-black-50">Designer</p>
+                <div class="info d-flex justify-content-between text-black-50">
+                  <span>16/5/2021</span>
+                  <span>1.1MB</span>
+                </div>
+              </div>
+              <div class="box rounded-3 bg-white position-relative">
+                <div class="icon text-center">
+                  <img src="images/psd.svg" alt="Icon" />
+                </div>
+                <div class="text-center fw-medium text-black">my-file.psd</div>
+                <p class="text-black-50">Osama</p>
+                <div class="info d-flex justify-content-between text-black-50">
+                  <span>16/5/2021</span>
+                  <span>15.1MB</span>
+                </div>
+              </div>
+              <div class="box rounded-3 bg-white position-relative">
+                <div class="icon text-center">
+                  <img src="images/pdf.svg" alt="Icon" />
+                </div>
+                <div class="text-center fw-medium text-black">my-file.pdf</div>
+                <p class="text-black-50">Medo</p>
+                <div class="info d-flex justify-content-between text-black-50">
+                  <span>20/06/2020</span>
+                  <span>5.5MB</span>
+                </div>
+              </div>
+              <div class="box rounded-3 bg-white position-relative">
+                <div class="icon text-center">
+                  <img src="images/avi.svg" alt="Icon" />
+                </div>
+                <div class="text-center fw-medium text-black">my-file.avi</div>
+                <p class="text-black-50">Admin</p>
+                <div class="info d-flex justify-content-between text-black-50">
+                  <span>16/5/2021</span>
+                  <span>12.5MB</span>
+                </div>
+              </div>
+              <div class="box rounded-3 bg-white position-relative">
+                <div class="icon text-center">
+                  <img src="images/eps.svg" alt="Icon" />
+                </div>
+                <div class="text-center fw-medium text-black">my-file.eps</div>
+                <p class="text-black-50">Uploader</p>
+                <div class="info d-flex justify-content-between text-black-50">
+                  <span>16/5/2021</span>
+                  <span>2.7MB</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+header {
+  .search {
+    width: fit-content;
+    &::before {
+      font-family: var(--fa-style-family-classic);
+      content: "\f002";
+      font-weight: 900;
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 14px;
+      color: grey;
+    }
+    input {
+      width: 160px;
+      margin-left: 5px;
+      padding-left: 30px;
+      border-radius: 10px;
+      transition: width 0.3s;
+      border: 1px solid #ddd;
+      font-size: 13px;
+      padding: 10px 30px;
+      @include breakpoints(340px) {
+        width: 130px;
+      }
+      &:focus {
+        width: 200px;
+        @include breakpoints(340px) {
+          width: 150px;
+        }
+      }
+    }
+  }
+  .header-icons {
+    .notification {
+      cursor: pointer;
+      margin-right: 15px;
+      sup {
+        width: 10px;
+        height: 10px;
+        display: block;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+        right: -5px;
+        top: -16;
+      }
+      @include breakpoints(340px) {
+        font-size: 15px;
+      }
+    }
+    .avatar {
+      width: 32px;
+      @include breakpoints(340px) {
+        width: 25px;
+      }
+    }
+  }
+}

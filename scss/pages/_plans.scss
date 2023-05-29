@@ -1,0 +1,55 @@
+.parent {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  @include breakpoints(550px) {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+.box {
+  background-color: #fff;
+  height: 100%;
+  .top {
+    border: 3px solid #fff;
+  }
+  &.green {
+    .top {
+      border: 3px solid #fff;
+      outline: 3px solid $green-color;
+    }
+  }
+  &.blue {
+    .top {
+      outline: 3px solid $blue-color;
+    }
+  }
+  &.orange {
+    .top {
+      outline: 3px solid $orange-color;
+    }
+  }
+  ul {
+    li {
+      padding: 15px 0;
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      border-bottom: 1px solid #eee;
+      i {
+        font-size: 18px;
+        margin-right: 5px;
+        &.help {
+          margin-left: auto;
+        }
+      }
+      @include breakpoints(400px) {
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  a {
+    width: fit-content;
+  }
+}

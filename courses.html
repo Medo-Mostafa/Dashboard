@@ -1,0 +1,446 @@
+<!DOCTYPE html5>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="crossorigin"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/courses.css" />
+  </head>
+  <body>
+    <main class="page d-flex">
+      <!-- Start Aside -->
+      <aside class="position-relative bg-white">
+        <h3 class="fw-bold text-black position-relative text-center">Medo</h3>
+        <ul>
+          <li>
+            <a class="d-flex align-items-center" href="index.html"
+              ><i class="fa-regular fa-chart-bar fa-fw me-lg-2"></i
+              ><span>Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a class="d-flex align-items-center" href="settings.html">
+              <i class="fa-solid fa-gear fa-fw me-lg-2"></i
+              ><span>Settings</span></a
+            >
+          </li>
+          <li>
+            <a class="d-flex align-items-center" href="profile.html"
+              ><i class="fa-regular fa-user fa-fw me-lg-2"></i
+              ><span>Profile</span></a
+            >
+          </li>
+          <li>
+            <a class="d-flex align-items-center" href="projects.html"
+              ><i class="fa-solid fa-diagram-project fa-fw me-lg-2"></i
+              ><span>Projects</span></a
+            >
+          </li>
+          <li>
+            <a class="d-flex align-items-center active" href="courses.html"
+              ><i class="fa-solid fa-graduation-cap fa-fw me-lg-2"></i
+              ><span>Courses</span></a
+            >
+          </li>
+          <li>
+            <a class="d-flex align-items-center" href="friends.html"
+              ><i class="fa-regular fa-circle-user fa-fw me-lg-2"></i
+              ><span>Friends</span></a
+            >
+          </li>
+          <li>
+            <a class="d-flex align-items-center" href="files.html"
+              ><i class="fa-regular fa-file fa-fw me-lg-2"></i
+              ><span>Files</span></a
+            >
+          </li>
+          <li>
+            <a class="d-flex align-items-center" href="plans.html"
+              ><i class="fa-regular fa-credit-card fa-fw me-lg-2"></i
+              ><span>Plans</span></a
+            >
+          </li>
+        </ul>
+      </aside>
+      <!-- End Aside -->
+      <div class="content w-100">
+        <!-- Start Header -->
+        <header class="bg-white p-1 p-md-3 d-flex justify-content-between">
+          <div class="search position-relative">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Type A Keyword"
+            />
+          </div>
+          <div
+            class="header-icons d-flex justify-content-between align-items-center"
+          >
+            <span
+              class="notification position-relative fa-regular fa-bell fa-lg"
+              ><sup></sup
+            ></span>
+            <img class="avatar" src="images/avatar.webp" alt="Avatar Image" />
+          </div>
+        </header>
+        <!-- End Header -->
+        <section class="main-section">
+          <h1 class="text-black position-relative mb-5">Plans</h1>
+          <div class="parent">
+            <div class="course bg-white rounded-3 position-relative">
+              <img
+                class="cover"
+                src="images/course-01.webp"
+                alt="Course Image"
+              />
+              <img
+                class="instructor"
+                src="images/team-01.webp"
+                alt="Team Image"
+              />
+              <div class="p-3">
+                <h6 class="m-0">Mastering Web Design</h6>
+                <p class="description c-grey">
+                  Master The Art Of Web Designing And Mocking, Prototyping And
+                  Creating Web Design Architecture
+                </p>
+              </div>
+              <div
+                class="info p-3 position-relative d-flex justify-content-between align-items-center"
+              >
+                <button type="button" class="btn btn-primary position-absolute">
+                  Course Info
+                </button>
+                <span class="c-grey">
+                  <i class="fa-regular fa-user"></i> 950</span
+                >
+                <span class="c-grey"
+                  ><i class="fa-solid fa-dollar-sign"></i> 165</span
+                >
+              </div>
+            </div>
+            <div class="course bg-white rounded-3 position-relative">
+              <img
+                class="cover"
+                src="images/course-02.webp"
+                alt="Course Image"
+              />
+              <img
+                class="instructor"
+                src="images/team-02.webp"
+                alt="Team Image"
+              />
+              <div class="p-3">
+                <h6 class="m-0">Data Structure And Algorithms</h6>
+                <p class="description c-grey">
+                  Master The Art Of Data Strcuture And Famous Algorithms Like
+                  Sorting, Dividing And Conquering
+                </p>
+              </div>
+              <div
+                class="info p-3 position-relative d-flex justify-content-between align-items-center"
+              >
+                <button type="button" class="btn btn-primary position-absolute">
+                  Course Info
+                </button>
+                <span class="c-grey">
+                  <i class="fa-regular fa-user"></i> 1150</span
+                >
+                <span class="c-grey"
+                  ><i class="fa-solid fa-dollar-sign"></i> 210</span
+                >
+              </div>
+            </div>
+            <div class="course bg-white rounded-3 position-relative">
+              <img
+                class="cover"
+                src="images/course-03.webp"
+                alt="Course Image"
+              />
+              <img
+                class="instructor"
+                src="images/team-03.webp"
+                alt="Team Image"
+              />
+              <div class="p-3">
+                <h6 class="m-0">Responsive Web Design</h6>
+                <p class="description c-grey">
+                  Mastering Responsive Web Design And Media Queries And Know
+                  Everything About Breakpoints
+                </p>
+              </div>
+              <div
+                class="info p-3 position-relative d-flex justify-content-between align-items-center"
+              >
+                <button type="button" class="btn btn-primary position-absolute">
+                  Course Info
+                </button>
+                <span class="c-grey">
+                  <i class="fa-regular fa-user"></i> 650</span
+                >
+                <span class="c-grey"
+                  ><i class="fa-solid fa-dollar-sign"></i> 90</span
+                >
+              </div>
+            </div>
+            <div class="course bg-white rounded-3 position-relative">
+              <img
+                class="cover"
+                src="images/course-04.webp"
+                alt="Course Image"
+              />
+              <img
+                class="instructor"
+                src="images/team-04.webp"
+                alt="Team Image"
+              />
+              <div class="p-3">
+                <h6 class="m-0">Mastering Python</h6>
+                <p class="description c-grey">
+                  Mastering Python To Prepare For Data Science And AI And
+                  Automating Things in Your Life
+                </p>
+              </div>
+              <div
+                class="info p-3 position-relative d-flex justify-content-between align-items-center"
+              >
+                <button type="button" class="btn btn-primary position-absolute">
+                  Course Info
+                </button>
+                <span class="c-grey">
+                  <i class="fa-regular fa-user"></i> 950</span
+                >
+                <span class="c-grey"
+                  ><i class="fa-solid fa-dollar-sign"></i> 250</span
+                >
+              </div>
+            </div>
+            <div class="course bg-white rounded-3 position-relative">
+              <img
+                class="cover"
+                src="images/course-05.webp"
+                alt="Course Image"
+              />
+              <img
+                class="instructor"
+                src="images/team-05.webp"
+                alt="Team Image"
+              />
+              <div class="p-3">
+                <h6 class="m-0">PHP Examples</h6>
+                <p class="description c-grey">
+                  PHP Tutorials And Examples And Practice On Web Application And
+                  Connecting With Databases
+                </p>
+              </div>
+              <div
+                class="info p-3 position-relative d-flex justify-content-between align-items-center"
+              >
+                <button type="button" class="btn btn-primary position-absolute">
+                  Course Info
+                </button>
+                <span class="c-grey">
+                  <i class="fa-regular fa-user"></i> 850</span
+                >
+                <span class="c-grey"
+                  ><i class="fa-solid fa-dollar-sign"></i> 150</span
+                >
+              </div>
+            </div>
+            <div class="course bg-white rounded-3 position-relative">
+              <img
+                class="cover"
+                src="images/course-02.webp"
+                alt="Course Image"
+              />
+              <img
+                class="instructor"
+                src="images/team-02.webp"
+                alt="Team Image"
+              />
+              <div class="p-3">
+                <h6 class="m-0">Data Structure And Algorithms</h6>
+                <p class="description c-grey">
+                  Master The Art Of Data Strcuture And Famous Algorithms Like
+                  Sorting, Dividing And Conquering
+                </p>
+              </div>
+              <div
+                class="info p-3 position-relative d-flex justify-content-between align-items-center"
+              >
+                <button type="button" class="btn btn-primary position-absolute">
+                  Course Info
+                </button>
+                <span class="c-grey">
+                  <i class="fa-regular fa-user"></i> 1150</span
+                >
+                <span class="c-grey"
+                  ><i class="fa-solid fa-dollar-sign"></i> 210</span
+                >
+              </div>
+            </div>
+            <div class="course bg-white rounded-3 position-relative">
+              <img
+                class="cover"
+                src="images/course-03.webp"
+                alt="Course Image"
+              />
+              <img
+                class="instructor"
+                src="images/team-03.webp"
+                alt="Team Image"
+              />
+              <div class="p-3">
+                <h6 class="m-0">Responsive Web Design</h6>
+                <p class="description c-grey">
+                  Mastering Responsive Web Design And Media Queries And Know
+                  Everything About Breakpoints
+                </p>
+              </div>
+              <div
+                class="info p-3 position-relative d-flex justify-content-between align-items-center"
+              >
+                <button type="button" class="btn btn-primary position-absolute">
+                  Course Info
+                </button>
+                <span class="c-grey">
+                  <i class="fa-regular fa-user"></i> 650</span
+                >
+                <span class="c-grey"
+                  ><i class="fa-solid fa-dollar-sign"></i> 90</span
+                >
+              </div>
+            </div>
+            <div class="course bg-white rounded-3 position-relative">
+              <img
+                class="cover"
+                src="images/course-01.webp"
+                alt="Course Image"
+              />
+              <img
+                class="instructor"
+                src="images/team-01.webp"
+                alt="Team Image"
+              />
+              <div class="p-3">
+                <h6 class="m-0">Mastering Web Design</h6>
+                <p class="description c-grey">
+                  Master The Art Of Web Designing And Mocking, Prototyping And
+                  Creating Web Design Architecture
+                </p>
+              </div>
+              <div
+                class="info p-3 position-relative d-flex justify-content-between align-items-center"
+              >
+                <button type="button" class="btn btn-primary position-absolute">
+                  Course Info
+                </button>
+                <span class="c-grey">
+                  <i class="fa-regular fa-user"></i> 950</span
+                >
+                <span class="c-grey"
+                  ><i class="fa-solid fa-dollar-sign"></i> 165</span
+                >
+              </div>
+            </div>
+            <div class="course bg-white rounded-3 position-relative">
+              <img
+                class="cover"
+                src="images/course-05.webp"
+                alt="Course Image"
+              />
+              <img
+                class="instructor"
+                src="images/team-05.webp"
+                alt="Team Image"
+              />
+              <div class="p-3">
+                <h6 class="m-0">PHP Examples</h6>
+                <p class="description c-grey">
+                  PHP Tutorials And Examples And Practice On Web Application And
+                  Connecting With Databases
+                </p>
+              </div>
+              <div
+                class="info p-3 position-relative d-flex justify-content-between align-items-center"
+              >
+                <button type="button" class="btn btn-primary position-absolute">
+                  Course Info
+                </button>
+                <span class="c-grey">
+                  <i class="fa-regular fa-user"></i> 850</span
+                >
+                <span class="c-grey"
+                  ><i class="fa-solid fa-dollar-sign"></i> 150</span
+                >
+              </div>
+            </div>
+            <div class="course bg-white rounded-3 position-relative">
+              <img
+                class="cover"
+                src="images/course-04.webp"
+                alt="Course Image"
+              />
+              <img
+                class="instructor"
+                src="images/team-04.webp"
+                alt="Team Image"
+              />
+              <div class="p-3">
+                <h6 class="m-0">Mastering Python</h6>
+                <p class="description c-grey">
+                  Mastering Python To Prepare For Data Science And AI And
+                  Automating Things in Your Life
+                </p>
+              </div>
+              <div
+                class="info p-3 position-relative d-flex justify-content-between align-items-center"
+              >
+                <button type="button" class="btn btn-primary position-absolute">
+                  Course Info
+                </button>
+                <span class="c-grey">
+                  <i class="fa-regular fa-user"></i> 950</span
+                >
+                <span class="c-grey"
+                  ><i class="fa-solid fa-dollar-sign"></i> 250</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
